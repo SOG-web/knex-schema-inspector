@@ -17,6 +17,7 @@ export function SchemaInspector(knex: Knex) {
       break;
     case 'Client_SQLite3':
     case 'Client_BetterSQLite3':
+    case 'Client_Libsql':
       constructor = require('./dialects/sqlite').default;
       break;
     case 'Client_Oracledb':
